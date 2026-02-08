@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a0a1a">
+  <title>Pixel Maze</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-wrapper">
+    <div id="hud">
+      <div id="hud-score">SCORE: <span id="score-val">0</span></div>
+      <div id="hud-hiscore">HI: <span id="hiscore-val">0</span></div>
+      <div id="hud-level">LVL <span id="level-val">1</span></div>
+    </div>
+    <canvas id="game-canvas"></canvas>
+    <div id="lives-bar"></div>
+    <div id="controls">
+      <div id="dpad">
+        <button id="btn-up" class="dpad-btn" aria-label="Up">&#9650;</button>
+        <div id="dpad-mid">
+          <button id="btn-left" class="dpad-btn" aria-label="Left">&#9664;</button>
+          <div id="dpad-center"></div>
+          <button id="btn-right" class="dpad-btn" aria-label="Right">&#9654;</button>
+        </div>
+        <button id="btn-down" class="dpad-btn" aria-label="Down">&#9660;</button>
+      </div>
+      <div id="action-buttons">
+        <button id="btn-pause" class="action-btn" aria-label="Pause">&#10074;&#10074;</button>
+        <button id="btn-sound" class="action-btn" aria-label="Sound Toggle">&#9835;</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
